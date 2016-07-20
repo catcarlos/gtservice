@@ -39,10 +39,9 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Numero de Vacantes"
         android:id="@+id/textView6"
-        android:layout_marginTop="81dp"
-        android:layout_below="@+id/textView5"
-        android:layout_alignLeft="@+id/btnDelete"
-        android:layout_alignStart="@+id/btnDelete" />
+        android:layout_below="@+id/editNombreEmpresa"
+        android:layout_alignRight="@+id/editNombreEmpresa"
+        android:layout_alignEnd="@+id/editNombreEmpresa" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -50,18 +49,23 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Nombre de Empresa"
         android:id="@+id/textView5"
-        android:layout_marginTop="20dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <Button
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rutas de camion"
-        android:id="@+id/button4"
-        android:layout_marginTop="70dp"
-        android:layout_below="@+id/editCantidadVacantes"
-        android:layout_centerHorizontal="true" />
+        android:text=""
+        android:inputType="number"
+        android:id="@+id/editRequisitoEdad"
+        android:singleLine="true"
+        android:maxLength="3"
+        android:layout_above="@+id/editRequisitoTitulo"
+        android:layout_marginBottom="31dp"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_alignLeft="@+id/textView17"
+        android:layout_alignStart="@+id/textView17" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -77,12 +81,56 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:ems="10"
         android:id="@+id/editCantidadVacantes"
+        android:singleLine="true"
         android:layout_below="@+id/textView6"
-        android:layout_alignLeft="@+id/textView5"
-        android:layout_alignStart="@+id/textView5"
-        android:layout_marginTop="25dp" />
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Requisitos"
+        android:id="@+id/textView17"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Edad:"
+        android:id="@+id/textView18"
+        android:layout_alignBottom="@+id/editRequisitoEdad"
+        android:layout_alignLeft="@+id/textView19"
+        android:layout_alignStart="@+id/textView19" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:inputType="number"
+        android:id="@+id/editRequisitoTitulo"
+        android:singleLine="false"
+        android:maxLength="100"
+        android:layout_marginBottom="24dp"
+        android:layout_above="@+id/btnSave"
+        android:layout_alignRight="@+id/editRequisitoEdad"
+        android:layout_alignEnd="@+id/editRequisitoEdad"
+        android:layout_toRightOf="@+id/btnDelete"
+        android:layout_toEndOf="@+id/btnDelete" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Titulo(s):"
+        android:id="@+id/textView19"
+        android:layout_alignBottom="@+id/editRequisitoTitulo"
+        android:layout_alignLeft="@+id/btnDelete"
+        android:layout_alignStart="@+id/btnDelete" />
 
 </RelativeLayout>

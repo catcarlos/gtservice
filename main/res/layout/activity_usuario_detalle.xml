@@ -29,8 +29,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Nombre de Reclutador"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:text="Nombre de Administrador/Reclutador"
         android:id="@+id/textView2"
         android:layout_gravity="center"
         android:layout_below="@+id/view"
@@ -96,6 +96,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editNombreReclutador"
+        android:maxLength="50"
         android:layout_gravity="center"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true" />
@@ -104,6 +105,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/editUsuario"
+        android:maxLength="20"
         android:layout_gravity="center"
         android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true" />
@@ -112,9 +114,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:hint="Mas de 8 caracteres"
+        android:hint="Limite (8-20) caracteres"
         android:ems="10"
         android:id="@+id/editPassword"
+        android:maxLength="20"
         android:layout_gravity="center"
         android:layout_below="@+id/textView4"
         android:layout_centerHorizontal="true" />
